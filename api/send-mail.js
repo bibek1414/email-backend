@@ -1,3 +1,4 @@
+// api/send-mail.js
 const nodemailer = require('nodemailer');
 
 module.exports = async (req, res) => {
@@ -53,7 +54,6 @@ module.exports = async (req, res) => {
 
     // Send email
     await transporter.sendMail(mailOptions);
-    
     return res.status(200).json({ success: true, message: 'Email sent successfully' });
   } catch (error) {
     console.error('Error sending email:', error);
