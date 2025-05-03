@@ -24,7 +24,7 @@ const transporter = nodemailer.createTransport({
 });
 
 // Email sending endpoint
-app.post('/api/send-email', async (req, res) => {
+app.post('/api/send-mail', async (req, res) => {
   const { firstName, lastName, email, phone, message } = req.body;
   
   if (!firstName || !lastName || !email || !message) {
