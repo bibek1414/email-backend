@@ -1,8 +1,0 @@
-{
-    "name": "email-verification-api",
-    "version": "1.0.0",
-    "description": "Email verification API for portfolio contact form",
-    "dependencies": {
-      "nodemailer": "^6.9.1"
-    }
-  }
